@@ -9,6 +9,7 @@ A simple Craft plugin for setting a point of focus on full-size background image
 
 ## Plugin Usage
 ![alt tag](http://i.imgur.com/XWpgyQY.png)
+
 1. Select any one asset, click the gear icon, and select **Set Background Position**
 2. Select any point on the top image to set the point of focus. The 3 images below will show a preview of the positioning in containers of differing ratios. 
 3. Click **Save Position**
