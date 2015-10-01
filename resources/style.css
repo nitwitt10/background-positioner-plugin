@@ -1,0 +1,137 @@
+
+
+.modal {
+    overflow: auto;
+    left: 3% !important;
+    top: 5% !important;
+    width: 94% !important;
+    height: 90% !important;
+}
+
+
+.bgposition-title {
+    font-size: 28px;
+    padding: 12px 26px 10px;
+    font-weight: 300;
+    border-bottom: dashed 2px #BBB;
+}
+
+.image-container {
+    max-width: 38%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .image {
+        cursor: pointer;
+        width: 100%;
+        display: block;
+    }
+
+    .focus-marker {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('focus-point.png');
+        background-repeat: no-repeat;
+        background-size: 60px;
+        background-position: 50% 50%;
+        pointer-events: none;
+    }
+
+
+
+
+.boxes-container {
+    width: 77%;
+    margin: 0 auto;
+}
+.boxes-container:before,
+.boxes-container:after {
+    content: " ";
+    display: table;
+}
+.boxes-container:after {clear: both;}
+.boxes-container {*zoom: 1;}
+
+
+    .box {
+        background-size: cover;
+        background-position: center;
+        border: solid 1px #888;
+        height: 0;
+        width: 0;
+        padding: 12%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .wide {
+        padding: 12% 27.7%;
+    }
+
+    .tall {
+        padding: 12% 8%;
+        margin-right: 0;
+    }
+
+button {
+    background-color: #da5a47;
+    color: #ffffff;
+    padding: 2px 11px;
+    line-height: 1em;
+    box-sizing: content-box;
+    height: 30px;
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
