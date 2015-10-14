@@ -16,6 +16,14 @@
     border-bottom: dashed 2px #BBB;
 }
 
+.bgposition-description {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
 .image-container {
     max-width: 38%;
     display: block;
@@ -35,8 +43,9 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -30px;
+        left: -30px;
+        padding: 30px;
         background-image: url('focus-point.png');
         background-repeat: no-repeat;
         background-size: 60px;
@@ -64,21 +73,33 @@
         background-size: cover;
         background-position: center;
         border: solid 1px #888;
+        position: relative;
         height: 0;
         width: 0;
         padding: 12%;
         float: left;
         margin-right: 2%;
+        margin-top: 32px;
     }
 
     .wide {
-        padding: 12% 27.7%;
+        padding: 12% 27%;
     }
 
     .tall {
         padding: 12% 8%;
         margin-right: 0;
     }
+
+        .box span {
+            position: absolute;
+            top: -28px;
+            left: 0;
+            text-align: center;
+            font-size: 16px;
+            width: 100%;
+        }
+
 
 button {
     background-color: #da5a47;

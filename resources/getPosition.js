@@ -10,6 +10,7 @@ var getPosition = function(element) {
         positionStyle = resultX + '% ' + resultY + '%';
 
         $('.box').css("background-position", (positionStyle));
+        $('.focus-marker').css("display", "block");
         $('.focus-marker').css("background-position", (positionStyle));
         console.log("CLICK: " + positionStyle);
     });
@@ -26,7 +27,21 @@ new Craft.ElementActionTrigger({
             imageUrl = $element.data('url');
             imageId  = $element.data('id');
 
-            var $div = $('<div class="modal"> <h2 class="bgposition-title">Set Responsive Background Position</h2> <div class="image-container"><img src="' + imageUrl + '" class="image"><div class="focus-marker"></div></div> <hr> <div class="boxes-container"><div class="box" style="background-image: url(\'' + imageUrl + '\');"></div> <div class="box wide" style="background-image: url(\'' + imageUrl + '\');"></div> <div class="box tall" style="background-image: url(\'' + imageUrl + '\');"></div></div> <hr><button class="position-confirm">Save Position</button></div>');
+        var $div = '<div class="modal">';
+                $div += '<h2 class="bgposition-title">Set Responsive Background Position</h2>';
+                $div += '<p class="bgposition-description">Select a point of focus by clicking anywhere on the image:</p>';
+                $div += '<div class="image-container">';
+                    $div += '<img src="' + imageUrl + '" class="image">';
+                    $div += '<div class="focus-marker" style="display: none;"></div>';
+                $div += '</div><hr>';
+                $div += '<div class="boxes-container">';
+                    $div += '<div class="box"      style="background-image: url(\'' + imageUrl + '\');"><span>Preview: Square</span></div>';
+                    $div += '<div class="box wide" style="background-image: url(\'' + imageUrl + '\');"><span>Preview: Wide</span></div>';
+                    $div += '<div class="box tall" style="background-image: url(\'' + imageUrl + '\');"><span>Preview: Tall</span></div>';
+                $div += '</div><hr>';
+                $div += '<button class="position-confirm">Save Position</button>';
+            $div += '</div>';
+
 
 		var myModal = new Garnish.Modal($div);
         getPosition('.image');
