@@ -10,7 +10,7 @@ class BackgroundPositionerPlugin extends BasePlugin
 
     public function addAssetActions($source)
     {
-        return array('backgroundPositioner_Positioner');
+        return array('BackgroundPositioner_Positioner');
     }
 
     function getVersion()
@@ -27,11 +27,5 @@ class BackgroundPositionerPlugin extends BasePlugin
     {
         return 'http://www.rabbleandrouser.com/';
     }
-
-    public function init() 
-    {
-        
-    }
-
     
 }

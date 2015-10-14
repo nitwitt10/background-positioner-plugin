@@ -6,7 +6,7 @@ class BackgroundPositioner_PositionerElementAction extends BaseElementAction {
         return Craft::t('Set Background Position');
     }
     public function getTriggerHtml() {
-        craft()->templates->includeCssResource('backgroundPositioner/style.css');
-        return craft()->templates->includeJsResource('backgroundPositioner/getPosition.js');
+        craft()->templates->includeCssResource('backgroundpositioner/style.css');
+        return craft()->templates->includeJsResource('backgroundpositioner/getPosition.js');
     }
 }
